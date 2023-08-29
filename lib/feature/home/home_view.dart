@@ -124,70 +124,62 @@ class _HomePageState extends State<HomePage> {
             //section what
             const ContainerWhat(),
             //section daftar programs
-            Stack(
-              children: [
-                Positioned(
-                  top: 200,
-                  bottom: 200,
-                  child: Container(
-                    width: 1440,
-                    height: 1138,
-                    decoration: const BoxDecoration(
-                      image: DecorationImage(
-                        image: AssetImage('images/BG.png'),
-                      ),
-                    ),
-                    child: Column(
+            Container(
+              width: 1440,
+              height: 1138,
+              decoration: const BoxDecoration(
+                image: DecorationImage(
+                  image: AssetImage('images/BG.png'),
+                ),
+              ),
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.center,
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  const Text(
+                    'Program Terpercaya dan Terfavorit',
+                    style: TextStyle(fontSize: 30),
+                  ),
+                  const SizedBox(
+                    height: 50,
+                  ),
+                  Container(
+                    width: 1000,
+                    height: 577,
+                    child: const Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       crossAxisAlignment: CrossAxisAlignment.center,
-                      mainAxisAlignment: MainAxisAlignment.center,
                       children: [
-                        const Text(
-                          'Program Terpercaya dan Terfavorit',
-                          style: TextStyle(fontSize: 30),
-                        ),
-                        const SizedBox(
-                          height: 50,
-                        ),
-                        Container(
-                          width: 1000,
-                          height: 577,
-                          child: const Row(
-                            mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                            crossAxisAlignment: CrossAxisAlignment.center,
-                            children: [
-                              FavoritContainer(
-                                  image: 'images/Rectangle-2159.png',
-                                  title: 'UI/UX Designer',
-                                  subtitle: '\nBakti Career Camp',
-                                  description:
-                                      '\nMenjadi profersional UX/UI Designer dalam\n3 sampai 4 bulan serta berkarir di\nperusahaan hiring partner  Bakti Academy. ',
-                                  titlebutton: 'Daftar Program'),
-                              FavoritContainer(
-                                  image: 'images/Rectangle-2159.png',
-                                  title: 'UI/UX Designer',
-                                  subtitle: '\nBakti Career Camp',
-                                  description:
-                                      '\nMenjadi profersional UX/UI Designer dalam\n3 sampai 4 bulan serta berkarir di\nperusahaan hiring partner  Bakti Academy. ',
-                                  titlebutton: 'Daftar Program'),
-                              FavoritContainer(
-                                  image: 'images/Rectangle-2159.png',
-                                  title: 'UI/UX Designer',
-                                  subtitle: '\nBakti Career Camp',
-                                  description:
-                                      '\nMenjadi profersional UX/UI Designer dalam\n3 sampai 4 bulan serta berkarir di\nperusahaan hiring partner  Bakti Academy. ',
-                                  titlebutton: 'Daftar Program'),
-                            ],
-                          ),
-                        )
+                        FavoritContainer(
+                            image: 'images/Rectangle-2159.png',
+                            title: 'UI/UX Designer',
+                            subtitle: '\nBakti Career Camp',
+                            description:
+                                '\nMenjadi profersional UX/UI Designer dalam\n3 sampai 4 bulan serta berkarir di\nperusahaan hiring partner  Bakti Academy. ',
+                            titlebutton: 'Daftar Program'),
+                        FavoritContainer(
+                            image: 'images/Rectangle-2159.png',
+                            title: 'UI/UX Designer',
+                            subtitle: '\nBakti Career Camp',
+                            description:
+                                '\nMenjadi profersional UX/UI Designer dalam\n3 sampai 4 bulan serta berkarir di\nperusahaan hiring partner  Bakti Academy. ',
+                            titlebutton: 'Daftar Program'),
+                        FavoritContainer(
+                            image: 'images/Rectangle-2159.png',
+                            title: 'UI/UX Designer',
+                            subtitle: '\nBakti Career Camp',
+                            description:
+                                '\nMenjadi profersional UX/UI Designer dalam\n3 sampai 4 bulan serta berkarir di\nperusahaan hiring partner  Bakti Academy. ',
+                            titlebutton: 'Daftar Program'),
                       ],
                     ),
-                  ),
-                )
-              ],
+                  )
+                ],
+              ),
             ),
             //section benefit
             Container(
-              color: Colors.white,
+              color: Colors.grey[200],
               width: 1440,
               height: 4442,
               child: Stack(
@@ -391,13 +383,14 @@ class _HomePageState extends State<HomePage> {
                                           ),
                                           const SizedBox(height: 14),
                                           Text(
-                                              'Dengan bergabung di Eduwork, kamu bisa belajar bersama dengan teman teman lain baik yang\nsedang belajar maupun yang sudah lulus, sehingga kamu bisa membangun network mu',
-                                              textAlign: TextAlign.center,
-                                              style: GoogleFonts.poppins(
-                                                  fontSize: 16,
-                                                  fontWeight: FontWeight.w400,
-                                                  color:
-                                                      const Color(0xff737373)))
+                                            'Dengan bergabung di Eduwork, kamu bisa belajar bersama dengan teman teman lain baik yang\nsedang belajar maupun yang sudah lulus, sehingga kamu bisa membangun network mu',
+                                            textAlign: TextAlign.center,
+                                            style: GoogleFonts.poppins(
+                                              fontSize: 16,
+                                              fontWeight: FontWeight.w400,
+                                              color: const Color(0xff737373),
+                                            ),
+                                          )
                                         ],
                                       ),
                                     ),

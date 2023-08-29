@@ -309,7 +309,7 @@ class Footer extends StatelessWidget {
               ],
             ),
           ),
-          const SizedBox(height: 164),
+          const SizedBox(height: 134),
           Text(
             '© 2022 BANGSA KREATIF ALL RIGHTS RESERVEDOWNED BY PT CITRA KARYA GROUP',
             style: GoogleFonts.plusJakartaSans(
